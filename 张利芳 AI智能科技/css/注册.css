@@ -1,0 +1,16 @@
+body{background:url('../image/bg.jpg') no-repeat 0 0/100% 100%;}
+div.wrap>.head>.top{height:164px;}
+div.wrap>.head>.top>.bottom{height:80px;line-height:80px;background:#f2f2f2;margin-left:0}
+div.wrap>.head>.top>.bottom>.contain>div,a{display:inline-block;color:#666;font:14px 微软雅黑;}
+div.wrap>.head>.top>.bottom>.contain>span{color:#5ddffe;font:14px 微软雅黑;}
+
+div.wrap>.main>.contain{border:1px solid #ddd;}
+div.wrap>.main>.contain>div{margin:50px auto 50px 150px;}
+div.wrap>.main>.contain>div>span{color:#666;font:16px 微软雅黑;width:100px;display:inline-block;}
+div.wrap>.main>.contain>div>input{width:280px;height:40px;display:inline-block;}
+div.wrap>.main>.contain>div>input#checkbox{width:13px;height:13px;margin-left:110px}
+div.wrap>.main>.contain>div>input#register{width:135px;height:48px;background:rgb(93, 223, 254);line-height:48px;text-align:center;border:0;color:#fff;font:16px 微软雅黑;margin-left:107px;}
+div.wrap>.main>.contain>div>input#identify{width:135px;height:39px;}
+div.wrap>.main>.contain>div>.tips{display:inline-block;color:#888;font:14px 微软雅黑;}
+div.wrap>.main>.contain>div>.tips>p>span{color:red;font:16px 微软雅黑;margin-right:10px;}
+div.wrap>.main>.contain>div.identify>img{width:102px;height:30px;display:inline-block;padding-top:10px;}

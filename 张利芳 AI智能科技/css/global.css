@@ -1,0 +1,83 @@
+*{padding:0;margin:0;}
+li{list-style:none;}
+a{text-decoration:none;display:block;}
+body{min-width: 1340px;max-width: 1920px;margin: 0 auto;}
+img{display:block;}
+div.flow{clear:both;}
+div.contain{width:90%;margin:0 auto;}
+div.wrap{width:100%;}
+div.wrap>.head{position:relative;}
+img{display:block;}
+/*登录注册*/
+div.wrap>.overlay{position:fixed;top:0px;left:0;width:100%;height:800px;background:rgba(0,0,0,0.5);z-index:99;display:none}
+div.wrap>.login{position:fixed;width:356px;height:408px;z-index:100;top:110px;left:35%;background:#fff;border:1px solid #ddd;display:none;}
+div.wrap>.login>form{width:84%;height:80%;margin:0 auto;}
+div.wrap>.login>form>h3{font:18px 微软雅黑;text-align:center;margin-top:30px;margin-bottom:15px}
+div.wrap>.login>form>.tips{width:100%;height:20px;color:red;font:12px 微软雅黑;}
+div.wrap>.login>form>input{display:block;width:298px;height:38px;margin-bottom:20px;font:16px 微软雅黑;}
+div.wrap>.login>form>div.radio{font:14px 微软雅黑;}
+div.wrap>.login>form>input#submitxx{background:#3F89EC;color:#fff;border:0px;margin-top:10px;}
+div.wrap>.login>form>.info>.note>a{font:14px 微软雅黑;color:#2E82FF;float:right;}
+div.wrap>.login>form>.info>.forget>a{font:14px 微软雅黑;color:#2E82FF;float:left;}
+div.wrap>.login>.foot{width:100%;height:12.5%;background:#f0f6ff;line-height:55px}
+div.wrap>.login>.foot>.scan>a{font:16px 微软雅黑;color:#2E82FF;margin-left:28px;float:left;margin-top:17px}
+div.wrap>.login>.foot>.enroll>a{font:16px 微软雅黑;color:#2E82FF;float:right;margin-right:30px;margin-top:17px}
+div.wrap>.login>.close{background:url(../image/叉叉2.png) no-repeat 0 0/100% 100%;width:16px;height:16px;position:absolute;top:5px;right:10px;}
+
+/*导航栏*/
+div.wrap>.head>.top>.nav{width:100%;height:80px;border-bottom:2px solid rgba(57,59,63,0.5);background:#000}
+div.wrap>.head>.top>.nav>.contain>div{float:left;}
+div.wrap>.head>.top>.nav>.contain>.img{padding:15px 0;}
+div.wrap>.head>.top>.nav>.contain>.img{width:125px;height:53px;}
+div.wrap>.head>.top>.nav>.contain>.img>img{width:125px;height:53px;}
+div.wrap>.head>.top>.nav>.contain>.mainNav>ul{height:80px;padding-left:143px;}
+div.wrap>.head>.top>.nav>.contain>.mainNav>ul>li{float:left;margin:auto 20px;}
+div.wrap>.head>.top>.nav>.contain>.mainNav>ul>li>a.active{color:#5DDFFE;border-bottom:2px solid #5DDFFE}
+div.wrap>.head>.top>.nav>.contain>.mainNav>ul>li>a:hover{color:#5DDFFE;border-bottom:2px solid #5DDFFE}
+div.wrap>.head>.top>.nav>.contain>.mainNav>ul>li>a{color:#fff;font:14px 微软雅黑;line-height:80px;text-align:center;}
+div.wrap>.head>.top>.nav>.contain>.infoNav{width:16%;color:#fff;font:14px 微软雅黑;float:right;padding:30px 0px}
+div.wrap>.head>.top>.nav>.contain>.infoNav>img{width:15px;height:18px;float:left}
+div.wrap>.head>.top>.nav>.contain>.infoNav>span{float:right;margin-right:60px;}
+div.wrap>.head>.top>.nav>.contain>.login{float:right;}
+div.wrap>.head>.top>.nav>.contain>.login-pic>img{width:30px;height:30px;margin-top:25px;}
+/*主体内容   尾  战略合作伙伴*/
+div.wrap>.main>.mainFoot{width:100%;height:330px;margin-top:50px;background:#F2F2F2}
+div.wrap>.main>.mainFoot>.contain{padding-top:50px;}
+div.wrap>.main>.mainFoot>.contain>.top{height:60px;border-bottom:1px solid #ccc}
+div.wrap>.main>.mainFoot>.contain>.top>.news{float: left}
+div.wrap>.main>.mainFoot>.contain>.top>.news>h3{font:24px 微软雅黑;color:#494949;}
+div.wrap>.main>.mainFoot>.contain>.top>.news>p{font:13px 微软雅黑;color:#c1c1c1;padding:5px 0;}
+div.wrap>.main>.mainFoot>.contain>.top>.more{float:right;width:80px;height:29px;background:#5DDFFE;margin-top:15px;}
+div.wrap>.main>.mainFoot>.contain>.top>.more>a{font:12px 微软雅黑;color:#fff;line-height:29px;text-align:center;}
+div.wrap>.main>.mainFoot>.contain>.top>.more>a:hover{color:#5DDFFE;line-height:29px;background:#fff;outline:1px solid #5DDFFE;}
+
+div.wrap>.main>.mainFoot>.contain>.partner{padding-top:30px;}
+div.wrap>.main>.mainFoot>.contain>.partner>ul>li{float:left;margin-right:62px;margin-bottom:15px}
+div.wrap>.main>.mainFoot>.contain>.partner>ul>li:last-child{margin-right:0;}
+
+/*尾部*/
+div.wrap>.footer{margin-top:50px}
+div.wrap>.footer>.footTop{height:287px;background:#29323D}
+div.wrap>.footer>.footTop>.contain>ul>li{width:22.5%;margin:80px 60px 0px 0px;float:left}
+div.wrap>.footer>.footTop>.contain>ul>li:last-child{margin-right:0;width:150px}
+div.wrap>.footer>.footTop>.contain>ul>li>h2{font:18px 微软雅黑;color:#fff;margin-bottom:20px}
+div.wrap>.footer>.footTop>.contain>ul>li>p{font:13px 微软雅黑;color:rgb(141, 144, 149);margin-bottom:10px}
+div.wrap>.footer>.footTop>.contain>ul>li>div.CSA>img{float:left;width:38px;height:39px}
+div.wrap>.footer>.footTop>.contain>ul>li>div.ISO>img{float:left;width:38px;height:39px}
+div.wrap>.footer>.footTop>.contain>ul>li>div.CSA>p{float:right;font:13px 微软雅黑;color:rgb(141, 144, 149);margin-top:10px;margin-right:22px}
+div.wrap>.footer>.footTop>.contain>ul>li>div.ISO>p{float:right;font:13px 微软雅黑;color:rgb(141, 144, 149);margin-top:10px;}
+
+div.wrap>.footer>.footBottom{background:#19212D;text-align:center}
+div.wrap>.footer>.footBottom>div{width:80%;font:13px 微软雅黑;color:rgb(141, 144, 149);margin:0 auto;height:51px;line-height:51px;}
+
+/*锚点*/
+div.wrap>.rightNav{position:fixed;bottom:150px;right:0px;width:54px;height:250px;background:rgb(36, 46, 71);}
+div.wrap>.rightNav>ul>li{width:54px;height:50px;position: relative;}
+div.wrap>.rightNav>ul>li>.active{width:126px;position:absolute;left:0px;top:0;background:rgb(36, 46, 71)}
+div.wrap>.rightNav>ul>li>.active>div>span{font:18px 微软雅黑;color:#fff;float:right;line-height:45px}
+div.wrap>.rightNav>ul>li>.active>div.phone{background:url(../image/pic.png) no-repeat -30px 9px;height:45px;}
+div.wrap>.rightNav>ul>li>.active>div.login-pic{background:url(../image/登陆1.png) no-repeat 0 0/35px 32px;height:45px;margin-top:5px;margin-left:9px}
+div.wrap>.rightNav>ul>li>div.weixin{background:url(../image/pic.png) no-repeat -30px -70px;height:45px;position:relative;}
+div.wrap>.rightNav>ul>li>div.weixin>img{width:150px;height:150px;position:absolute;left:-175px;top:-40px;display:none}
+div.wrap>.rightNav>ul>li>.active>div.qq{background:url(../image/pic.png) no-repeat -30px -30px;height:45px;}
+div.wrap>.rightNav>ul>li>div.totop{background:url(../image/pic.png) no-repeat -30px -254px;height:45px;}

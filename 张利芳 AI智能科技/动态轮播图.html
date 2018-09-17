@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>动态轮播</title>
+	<style>
+		*{padding:0;margin:0;}
+		li{list-style:none;}
+		a{text-decoration:none;display:block;}
+		ul{position:relative;width:100%;height:580px;overflow:hidden;background:url('image/indexbanner.png') no-repeat 0 0/100% 580px;background-color:#000;}
+		ul>li{width:100%;height:580px;position:absolute;display:none}
+		ul>li:first-child{display:block;}
+		ul>li:nth-child(2){width:100%;height:580px;position:absolute;background:url('image/f3-bg.png') no-repeat 0 0/100% 580px;background-color:#000}
+		ul>li>.contain{position:relative;overflow:hidden;width:90%;height:80%;margin:5% auto 0 auto;}
+		ul>li>.contain>.f1-1{height:32px;position:absolute;top:-100px;color:#fff;font:600 50px 微软雅黑;z-index:1}
+		ul>li>.contain>.f1-2{position:absolute;top:150px;left:-500px;color:rgba(255,255,255,0.6);font:16px 微软雅黑;line-height:35px;z-index:1}
+		ul>li>.contain>.f1-3{position:absolute;bottom:-471px;z-index:1}
+		ul>li>.contain>.f1-4{position:absolute;top:10px;right:-2000px;}
+		div.list{position:absolute;top:92%;left:45%;}
+		div.list>div.dot{display:inline-block;width:25px;height:25px;border-radius:13px;background:#fff;}
+		div.list>div.dot>a{display:block;}
+		div.list>div.dot:first-child{background:rgb(93, 223, 254)}
+	</style>
+	<script src="jquery-1.11.1.min.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<ul>
+			<li>
+				<div class="contain">
+					<div class="f1-1">Explore The AI World</div>
+					<div class="f1-2">
+						智能的边界正在不断被突破<br>
+						将最前沿的人工智能技术与行业应用相结合<br>
+						全面解决机器看、听、理解的根本问题<br>
+						让人工智能服务于人类生命健康、公共安全、城市可持续发展等领域<br>
+					</div>
+					<div class="f1-3"><img src="image/f1-3.png" alt=""></div>
+					<div class="f1-4"><img src="image/f1-4.png" alt=""></div>
+					<div class="f1-5"></div>
+				</div>
+			</li>
+			<li>
+				<div class="contain">
+					<div class="f1-1">看见，健康的明天</div>
+					<div class="f1-2">
+						个体的健康，是人类整体发展的基础<br>
+						利用最前沿的深度学习技术<br>
+						让人工智能技术帮助和实现医疗领域的突破<br>
+						努力让每个人都能获得医疗健康服务<br>
+					</div>
+					<div class="f1-3"><img src="image/f1-3.png" alt=""></div>
+					<div class="f1-4"><img src="image/f3-4.png" alt=""></div>
+					<div class="f1-5"></div>
+				</div>
+			</li>
+			<li>
+				<div class="contain">
+					<div class="f1-1">因为看见，所以相信</div>
+					<div class="f1-2">
+						探索的动机，让我们永不止步。<br>
+						AI的边界，正被步步扩宽。<br>
+						面对无限可能，你是想仗剑江湖，还是悬壶济世？<br>						
+					</div>
+					<div class="f1-3"><img src="image/f1-3.png" alt=""></div>
+					<div class="f1-4"><img src="image/f4-5.png" alt=""></div>
+					<div class="f1-5"></div>
+				</div>
+			</li>
+			<li>
+				<div class="contain">
+					<div class="f1-1">洞察，智慧的金融</div>
+					<div class="f1-2">
+						从全球首创的“刷脸”取款<br>
+						到技术驱动下的跨领域业务创新<br>
+						依图科技自主研发的人工智能金融行业解决方案<br>
+						已覆盖金融各个领域，助力金融智慧转型<br>
+					</div>
+					<div class="f1-3"><img src="image/f1-3.png" alt=""></div>
+					<div class="f1-4"><img src="image/f6-2.jpg" alt=""></div>
+					<div class="f1-5"></div>
+				</div>
+			</li>
+			<li>
+				<div class="contain">
+					<div class="f1-1">体验，智能的进化</div>
+					<div class="f1-2">
+						智能硬件连接着人们与未来智能生活<br>
+						通过自主研发的人工智能技术，赋予硬件“智慧”的灵魂<br>
+						彻底摆脱通过功能性解决“痛点”模式<br>
+						让更多人享受人工智能带来的高效、便利和愉悦<br>
+					</div>
+					<div class="f1-3"><img src="image/f1-3.png" alt=""></div>
+					<div class="f1-4"><img src="image/f5-6.png" alt=""></div>
+					<div class="f1-5"></div>
+				</div>
+			</li>
+		</ul>
+		<div class="list">
+			<div class="dot"><a href=""></a></div>
+			<div class="dot"><a href=""></a></div>
+			<div class="dot"><a href=""></a></div>
+			<div class="dot"><a href=""></a></div>
+			<div class="dot"><a href=""></a></div>
+		</div>
+	</div>
+	<script>
+		$(function(){
+			var index=0;
+			var num=1;
+			$('li').eq(index).find('div.f1-1').css('top','-100px').animate({top:'50px'},400)
+			$('li').eq(index).find('div.f1-2').css('left','-500px').delay(400).animate({left:'0px'},400)
+			$('li').eq(index).find('div.f1-4').css('right','-1000px').delay(400).animate({right:'58px'},400)
+			$('li').eq(index).find('div.f1-3').css('bottom','-100px').delay(800).animate({bottom:'100px'},400)
+			function run(){
+				$('div.dot').eq(num).css('background','rgb(93, 223, 254)').siblings().css('background','#fff');
+				num++;
+				if(num==5){num=0}	
+				if($('li').eq(index).next().length == 0){
+					$('li').first().show();
+					$('li').last().hide();
+					index = 0;
+				}else{
+					$('li').eq(index).hide().next().show();		
+					$('li').eq(index).next().siblings().hide()		
+					index++;			
+				}								
+				$('li').eq(index).find('div.f1-1').css('top','-100px').animate({top:'50px'},400)
+				$('li').eq(index).find('div.f1-2').css('left','-500px').delay(500).animate({left:'0px'},400)
+				$('li').eq(index).find('div.f1-3').css('bottom','-100px').delay(900).animate({bottom:'100px'},400)
+				$('li').eq(0).find('div.f1-4').css('right','-500px').delay(500).animate({right:'58px'},400)
+				$('li').eq(1).find('div.f1-4').css('right','-500px').delay(500).animate({right:'88px'},400)
+				$('li').eq(2).find('div.f1-4').css('right','-2000px').delay(500).animate({right:'0px',top:'-180px'},600)
+				$('li').eq(3).find('div.f1-4').css('right','-2000px').delay(500).animate({right:'-110px',top:'-70px'},600)
+				$('li').eq(4).find('div.f1-4').css('right','-2000px').delay(500).animate({right:'-166px'},600)
+			}
+			var timer=setInterval(run,6000)
+			$('div.dot').mouseenter(function(){
+				clearInterval(timer);
+				var sub=$(this).index();
+				if(sub==0){
+					$('li').eq(sub).show().siblings().hide()	
+				}
+				index=sub-1;
+				num=sub;
+				run()
+			}).mouseleave(function(){
+				timer=setInterval(run,6000)
+			})
+		})
+	</script>
+</body>
+</html>
